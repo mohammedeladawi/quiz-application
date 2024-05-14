@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Tahoma, Arial;
+}
+
+.quiz-app {
+    width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f6f6f6;
+}
+
+.quiz-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+.question-area {
+    font-weight: bold;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.answers-area {
+    padding: 10px;
+    background-color: #fff;
+}
+
+.answers-area .answer {
+    padding: 15px;
+    background-color: #f6f6f6;
+}
+
+.answers-area .answer:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+}
+
+.answers-area .answer input[type='radio'] {
+    cursor: pointer;
+}
+
+.answers-area .answer label {
+    color: #777;
+    font-weight: bold;
+    cursor: pointer;
+    padding-left: 4px;
+    font-size: 14px;
+    top: -1px;
+    position: relative;
+}
+
+.answers-area .answer input[type='radio']:checked+label {
+    color: #0075ff;
+}
+
+.submit-button {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #0075ff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+    transition-duration: .3s;
+}
+
+.submit-button:hover {
+    background-color: #005fcc;
+}
+
+.bullets {
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ddd;
+}
+
+.bullets .spans span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #ddd;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.bullets .spans span.on {
+    background-color: #0075ff;
+}
+
+.bullets .count-down {
+    flex: 1;
+    text-align: right;
+}
+
+.results {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.results span {
+    font-weight: bold;
+}
+
+.results span.perfect {
+    color: #0075ff;
+}
+
+.results span.good {
+    color: #009688;
+}
+
+.results span.bad {
+    color: #dc0a0a;
+}
